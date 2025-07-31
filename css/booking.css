@@ -1,0 +1,110 @@
+body {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  color: #f4f4f4;
+}
+
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  color: #ff4c29;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4c29;
+}
+
+.booking-form {
+  max-width: 600px;
+  margin: 4rem auto;
+  background: #111;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(255, 76, 41, 0.15);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.booking-form h2 {
+  text-align: center;
+  color: #ff4c29;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.booking-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-form label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+.booking-form input,
+.booking-form select {
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #f4f4f4;
+  transition: border 0.3s;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #ff4c29;
+  outline: none;
+}
+
+.cta-button {
+  margin-top: 2rem;
+  background-color: #ff4c29;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e63e1d;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  margin-top: 3rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

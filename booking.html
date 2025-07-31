@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book Service - AutoFixNow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/booking.css" />
+</head>
+<body>
+
+  <header>
+    <h1>AutoFixNow</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <div class="booking-form">
+    <h2>Book A Mechanic</h2>
+    <form>
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="phone">Contact Number</label>
+      <input type="tel" id="phone" name="phone" required />
+
+      <label for="vehicle">Vehicle Type</label>
+      <input type="text" id="vehicle" name="vehicle" placeholder="e.g., Bike, Car, SUV" required />
+
+      <label for="discription"> Describe more about your issue </label>
+      <input type="text" id="discription" name="discription" placeholder="Describe here" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Choose a service --</option>
+        <option value="puncture">Puncture Repair</option>
+        <option value="battery">Battery Jumpstart</option>
+        <option value="fuel">Fuel Delivery</option>
+        <option value="tow">Towing Service</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="location">Your Location</label>
+      <input type="text" id="location" name="location" placeholder="e.g., Street, Area, City" required />
+
+      <button type="button" class="cta-button" onclick="getLocation()">📍 Use My GPS Location</button>
+
+      <button type="submit" class="cta-button">Submit Booking</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 AutoFixNow. Engineered for your journey.
+  </footer>
+
+  <script>
+    function getLocation() {
+      const locationInput = document.getElementById('location');
+
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(
+          async (position) => {
+            const lat = position.coords.latitude;
+            const lon = position.coords.longitude;
+
+            try {
+              const response = await fetch(`https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lon}`);
+              const data = await response.json();
+              locationInput.value = data.display_name || `${lat}, ${lon}`;
+            } catch (error) {
+              locationInput.value = `${lat}, ${lon}`;
+            }
+          },
+          (error) => {
+            alert('Unable to fetch location.');
+          }
+        );
+      } else {
+        alert('Geolocation is not supported by this browser.');
+      }
+    }
+  </script>
+
+</body>
+</html>

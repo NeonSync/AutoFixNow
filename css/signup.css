@@ -1,0 +1,70 @@
+body {
+  background: linear-gradient(to bottom, #0d0d0d, #1a1a1a);
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.signup-container {
+  background-color: #111;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 76, 41, 0.15);
+  width: 100%;
+  max-width: 450px;
+  color: #f4f4f4;
+}
+
+h2 {
+  text-align: center;
+  color: #ff4c29;
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin: 1rem 0 0.3rem;
+  color: #ccc;
+}
+
+input {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: #fff;
+  font-size: 1rem;
+}
+
+input:focus {
+  border-color: #ff4c29;
+  outline: none;
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: #ff4c29;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63e1d;
+}
+
+#error-message {
+  color: #ff4c29;
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  background: linear-gradient(to right, #0d0d0d, #1a1a1a);
+  color: #f4f4f4;
+}
+
+header {
+  background-color: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #ff4c29;
+}
+
+header h1 {
+  color: #ff4c29;
+}
+
+nav a {
+  color: #ccc;
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #ff4c29;
+}
+
+main {
+  padding: 2rem;
+}
+
+.welcome {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.requests h3 {
+  color: #ff4c29;
+  margin-bottom: 1rem;
+}
+
+.request-card {
+  background-color: #111;
+  border: 1px solid #333;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 76, 41, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.request-card:hover {
+  transform: scale(1.02);
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+button.accept {
+  background-color: #28a745;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  margin-right: 1rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button.reject {
+  background-color: #dc3545;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #111;
+  color: #888;
+  margin-top: 3rem;
+}

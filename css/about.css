@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(to bottom, #0f0f0f, #1a1a1a);
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  color: #eee;
+  line-height: 1.6;
+}
+
+header {
+  background: #111;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  color: #ff4c29;
+  margin: 0;
+}
+
+nav a {
+  margin-left: 1rem;
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ff4c29;
+}
+
+.about {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background-color: #111;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 76, 41, 0.1);
+  animation: fadeIn 1s ease;
+}
+
+.about h2 {
+  color: #ff4c29;
+  margin-top: 2rem;
+}
+
+.about p,
+.about ul {
+  color: #ccc;
+}
+
+.about ul {
+  padding-left: 1.5rem;
+}
+
+.about li {
+  margin: 0.5rem 0;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.cta-button {
+  background-color: #ff4c29;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #e63e1d;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  margin-top: 3rem;
+  padding: 1rem;
+}

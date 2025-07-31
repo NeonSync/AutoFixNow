@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Mono', monospace;
+  background: radial-gradient(circle at top, #1c1c1c, #0d0d0d);
+  color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fadeIn 1s ease;
+}
+
+.container {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #ff4c29;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #aaa;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.choice {
+  text-align: center;
+  background: #111;
+  border: 2px solid #444;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 180px;
+  height: 50px;
+  text-decoration: none;
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.choice img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.choice span {
+  font-size: 1.1rem;
+}
+
+.choice:hover {
+  transform: scale(1.05);
+  background: #222;
+  border-color: #ff4c29;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
