@@ -20,6 +20,6 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
 
   // Simulated success
   localStorage.setItem("mechanicUser", JSON.stringify({ name, email, phone }));
-  alert("Signup successful! You can now login.");
-  window.location.href = "mechanic-login.html";
+  alert("Signup successful! You can now access our page.");
+  window.location.href = "mechanic-dashboard.html";
 });
