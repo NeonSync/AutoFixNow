@@ -28,10 +28,14 @@
       <input type="tel" id="phone" name="phone" required />
 
       <label for="vehicle">Vehicle Type</label>
-      <input type="text" id="vehicle" name="vehicle" placeholder="e.g., Bike, Car, SUV" required />
-
-      <label for="discription"> Describe more about your issue </label>
-      <input type="text" id="discription" name="discription" placeholder="Describe here" required>
+      <select id="vehicle" name="vehicle"required>
+        <option value="">-- Choose a vehicle --</option>
+        <option value="Vehicle">Bike</option>
+        <option value="Activa">Activa</option>
+        <option value="car">Car</option>
+        <option value="Rikshaw">Rikshaw</option>
+        <option value="other">Other</option>
+       </select>
 
       <label for="service">Select Service</label>
       <select id="service" name="service" required>
@@ -42,6 +46,9 @@
         <option value="tow">Towing Service</option>
         <option value="other">Other</option>
       </select>
+
+        <label for="discription"> Describe more about your issue </label>
+      <input type="text" id="discription" name="discription" placeholder="Describe here" required>
 
       <label for="location">Your Location</label>
       <input type="text" id="location" name="location" placeholder="e.g., Street, Area, City" required />

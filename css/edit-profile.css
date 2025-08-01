@@ -1,0 +1,82 @@
+ body {
+  background-color: #0d0d0d;
+  color: #f4f4f4;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.edit-container {
+  background: #1a1a1a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 76, 41, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.edit-container h2 {
+  color: #ff4c29;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #ccc;
+}
+
+input,
+select {
+  padding: 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #222;
+  color: white;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #ff4c29;
+  outline: none;
+}
+
+button {
+  margin-top: 2rem;
+  background-color: #ff4c29;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63e1d;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #ccc;
+  text-decoration: none;
+  text-align: center;
+}
+
+.back:hover {
+  color: #ff4c29;
+}

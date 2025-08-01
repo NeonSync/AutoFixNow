@@ -1,0 +1,58 @@
+body {
+  background-color: #0d0d0d;
+  color: #f4f4f4;
+  font-family: 'Roboto Mono', monospace;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-container {
+  background: #1a1a1a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(255, 76, 41, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.profile-container h2 {
+  color: #ff4c29;
+  margin-bottom: 2rem;
+}
+
+.profile-card p {
+  margin: 0.5rem 0;
+  color: #ccc;
+}
+
+.edit-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background-color: #ff4c29;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #e63e1d;
+}
+
+.back {
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: #ccc;
+  text-decoration: none;
+}
+
+.back:hover {
+  color: #ff4c29;
+}
