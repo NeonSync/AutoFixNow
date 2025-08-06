@@ -21,5 +21,5 @@ document.getElementById("signupForm").addEventListener("submit", function (e) {
   // Simulated success
   localStorage.setItem("mechanicUser", JSON.stringify({ name, email, phone }));
   alert("Signup successful! You can now access our page.");
-  window.location.href = "user-dashboard.html";
+  window.location.href = "user.html";
 });
