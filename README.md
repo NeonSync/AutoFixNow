@@ -1,4 +1,4 @@
-🔧 AutoFixNow - On-Demand Vehicle Repair at Your Location
+🔧 AutoFixNow - On-Demand Vehicle Repair at Your Location (On working)
 
 AutoFixNow is a web-based platform that connects users with verified local mechanics for quick, on-spot vehicle repairs such as tire punctures, breakdowns, and basic servicing. Whether you're stuck on the road or just need instant vehicle support — AutoFixNow brings the mechanic to you.
 
@@ -31,18 +31,3 @@ AutoFixNow is a web-based platform that connects users with verified local mecha
 - *(Future upgrades may include backend for real-time tracking and payments)*
 
 ---
-
-📁 Folder Structure
-
-```bash
-AutoFixNow/
-│
-├── index.html               # Intro page
-├── user-login.html          # User login & registration
-├── mechanic-login.html      # Mechanic login & signup
-├── dashboard-user.html      # User dashboard
-├── dashboard-mechanic.html  # Mechanic dashboard
-├── booking.html             # Booking page
-├── danger-map.html          # Map showing danger zones
-├── style.css                # Global stylesheet
-└── assets/                  # Images and icons
